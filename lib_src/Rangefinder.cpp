@@ -137,7 +137,3 @@ float Rangefinder::getDistanceCM() {
 	distance = (getRoundTripTimeMicroSeconds() * 0.0343) / 2.0;
 	return distance;
 }
-
-//digitalRead return 0/1
-//newReading need to be bool
-bool newReading = digitalRead(Rangefinder::echoPin);

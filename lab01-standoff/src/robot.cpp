@@ -16,9 +16,8 @@ void Robot::init(void)
 {
     chassis.init();
 
-    irDecoder.init(IR_PIN);
-    mb_ez1.init(USE_ECHO);  // TODO: use the sensor/method of your choice
-    rangefinder.attach(15,10);//(trigger pin, echo pin)
+    irDecoder.init(IR_PIN);  // TODO: use the sensor/method of your choice
+    rangefinder.attach(16,17);//(trigger pin, echo pin)
 }
 
 void Robot::loop() 
